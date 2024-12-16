@@ -1,0 +1,841 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+/*nav ================================================================================*/
+.navbar {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-fixed-top{
+    position: absolute;
+}
+
+
+/* .navbar .navbar-left{
+} */
+
+/* .navbar .navbar-right{
+} */
+
+/*모바일ver. 오른쪽 네비 아이콘*/
+.navbar .nav-icon{
+    display: none;
+}
+
+/*기아 로고*/
+.navbar-header #nav-logo img{
+    position: absolute;
+    transform: translate(420px, -15px);
+}
+
+/*nav 텍스트 컬러*/
+.navbar li a{
+    color: #ffffff !important;
+}
+
+/*언어 드롭다운*/
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/*언어 드롭다운 hover*/
+.dropdown-menu li a:hover {
+    color: #fff !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+
+
+
+
+
+
+/*carousel (화면 상단 이미지 슬라이드)==========================================================================*/
+/* #myCarousel{
+} */
+
+/* 이미지+문구+버튼+페이지넘버링*/
+#myCarousel .item{
+    height: 100%;
+}
+
+/*페이지넘버링*/
+.carousel-indicators{
+    padding-bottom: 10px;
+}
+
+/*PC용 이미지*/
+#myCarousel .carousel-inner .item img:nth-child(1){ 
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*모바일용 이미지*/
+#myCarousel .carousel-inner .item img:nth-child(2){ 
+    display: none;
+}
+
+/*텍스트, 버튼*/
+.carousel-caption{ 
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    text-align: left;
+    line-height: 1.5;
+    /* animation-name: ani;
+    animation-duration: 0.7s;
+    animation-delay: 0.4s; */
+}
+
+/*자동차 이름*/
+.carousel-caption h3{ 
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+/*문구*/
+.carousel-caption p{ 
+    font-size: 18px;
+}
+
+/*버튼*/
+.carousel-caption .btn{
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 25px;
+    margin-right: 10px;
+}
+
+
+
+/*bestkia (toggle tab)====================================================================*/
+#bestkia h3{/*제목 Best Kia*/
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#bestkia .nav-tabs{/*최근출시, 연비 효율 등 탭*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#bestkia .nav-tabs a{/*탭의 텍스트*/
+    font-weight: bold;
+    color: #697278;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+#bestkia .nav-tabs li.active a{ /*선택된 탭의 텍스트*/
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+#bestkia .box{/*자동차 박스*/
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2.5;
+}
+
+#bestkia .box .info{/*자동차 특징 설명*/
+    height: 80px;
+}
+
+#bestkia .box .box2{ /*자동차 내용 전체*/
+    height: 270px;
+}
+
+#bestkia .box .col-sm-4{ /*자동차 내용 당 제목*/
+    float: left;
+    font-weight: bold;
+}
+
+#bestkia .box .col-sm-8{ /*자동차 내용 당 값 오른쪽 정렬*/
+    text-align: right;
+    color: #697278;
+}
+
+#bestkia .box .price{ /*자동차 가격*/
+    text-align: right;
+    padding-bottom: 20px;
+    
+}
+
+#bestkia .box .price1{ /*숫자*/
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#bestkia .box .price2{ /*원*/
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+#bestkia .btn-box{ /*자세히 보기 + 견적 내기 버튼*/
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#bestkia .box .btn{ /*자세히 보기, 견적 내기 버튼*/
+    border-radius: 0;
+    margin-right: 10px;
+    width: 45%;
+}
+
+.btn-black{ /*견적 내기 버튼*/
+    background: black;
+    color: white;
+}
+
+.btn-black:hover{ /*견적 내기 버튼에 마우스 올라갔을 때*/
+    background: rgb(202, 202, 202);
+    color: #2c2c2c;
+    border: #a6a6a6 solid 0.1px;
+}
+
+.sort {/*각 탭 당 하단 안내 문구*/
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+
+
+
+/* ETC(견적내기, 시승 신청 등) ============================================================*/
+#etc .box{/*각 항목 박스*/
+    padding: 15px;
+    background: #F8F8F8;
+    transition: 0.5s;
+}
+
+#etc .box:hover{ /*박스에 마우스 올라갔을 때 배경*/
+    background: #05141F;
+    color: white;
+}
+
+#etc .box img{ /*아이콘, >*/
+    width:25px;
+}
+
+#etc .box h3{ /*각 항목 이름*/
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#etc .box div{ /*자세히 보기*/
+    text-align: right;
+    color: #F8F8F8;
+}
+
+#etc .box img:nth-child(1){ /*디폴트 아이콘 및 >*/
+    display: inline;
+}
+
+#etc .box img:nth-child(2){ /*마우스 올렸을 때 띄울 아이콘 및 >*/
+    display: none;
+}
+
+#etc .box:hover img:nth-child(1){ /*디폴트 아이콘 및 >*/
+    display: none;
+}
+
+#etc .box:hover img:nth-child(2){ /*마우스 올렸을 때 띄울 아이콘 및 >*/
+    display: inline;
+}
+
+
+
+
+
+/*News ==========================================================================*/
+#news h3{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+#news .col-sm-6{ /*자동차 이미지*/
+    float: right;
+    height: 460px;
+    padding: 0;
+}
+
+#news .col-sm-6 img:nth-child(1){
+    display: block;
+}
+
+#news .col-sm-6 img:nth-child(2){
+    display: none;
+}
+
+#news .col-sm-6:nth-child(2){ /*왼쪽 텍스트 박스*/
+    background: #697278;
+    color: white;
+    padding: 60px;
+}
+
+#news .col-sm-6:nth-child(2) h5,h4{ /*왼쪽 텍스트 박스 제목들*/
+    font-weight: bold;
+}
+
+#news .col-sm-6 h5{ /*제목*/
+    font-size: 15px;
+}
+
+#news .col-sm-6 h4{ /*소제목*/
+    font-size: 22px;
+    line-height: 2.5;
+    padding-bottom: 50px;
+}
+
+#news .col-sm-6:nth-child(2) p{ /*내용*/
+    font-size: 14px;
+    color: #d4d4d4;
+    padding-bottom: 70px;
+    line-height: 2;
+}
+
+
+#news .col-sm-6 .btn{ /*버튼*/
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 25px;
+    margin-right: 10px;
+}
+
+#news .col-sm-4{ /*하단 뉴스*/
+    padding-top: 50px;
+    padding-bottom: 150px;
+    opacity: 0;
+}
+
+#news .col-sm-4 h4{ /*하단 뉴스 제목*/
+    color: #697278;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#news .col-sm-4 p{ /*하단 뉴스 내용*/
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+
+
+/*footer1 =======================================================================================*/
+#footer1{
+    background-color: #05141F;
+    color: white;
+    padding: 30px 80px;
+}
+
+/*로고*/
+#footer1 .row .col-sm-12{
+    display: block;
+    width: 140px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+#footer1 .row2 .col-sm-3{
+    height: 220px;
+}
+
+/*판매 네트워크, 견적 내기 등*/
+#footer1 .row2 .col-sm-3:nth-child(1) ul li{
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*New Kia, 공지사항 등*/
+#footer1 .row2 .col-sm-3:nth-child(2) ul li{
+    color: #79837D;
+    padding-bottom: 5px;
+}
+
+/*sns*/
+#footer1 .row2 .col-sm-6{ 
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*sns 아이콘*/
+#footer1 .row2 .col-sm-6 ul li{ 
+    float: left;
+    padding: 10px;
+}
+
+/*홈*/
+#footer1 .row3 .col-sm-8 img{
+    padding-right: 7px;
+}
+
+/*국가, 드롭업*/
+#footer1 .row3 .col-sm-4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*국가*/
+#footer1 .row3 .col-sm-4 .global{
+    float: left;
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer1 .row3 .col-sm-4 .global img{
+    padding-right: 7px;
+}
+
+/*드롭업*/
+#footer1 .row3 .dropup .btn{
+    width: 200px;
+    background: #010E18;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+/*footer2 =======================================================================================*/
+#footer2{
+    background-color: #010E18;
+    color: #79838B;
+    padding: 30px 80px;
+}
+
+/*개인정보 처리방침 등, 저작권*/
+#footer2 .row{
+   padding-bottom: 30px;
+}
+
+/*개인정보 처리방침 등*/
+#footer2 .col-sm-8{
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer2 .col-sm-8 li{
+    float: left;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+/*저작권*/
+#footer2 .col-sm-4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*어워즈*/
+#footer2 .row2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#footer2 .col-sm-2{
+    font-size: 11px;
+    line-height: 2;
+    width: 250px;
+}
+
+#footer2 .col-sm-2 img{
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+/*모바일 버전. SNS, Family Site*/
+#collapse{
+    display: none;
+}
+
+
+
+
+/* 미디어 쿼리 (반응형 웹) ---------------------------------------------------------------------*/
+@media screen and (max-width:767px){
+    .navbar{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .navbar #nav-text{
+        display: none;
+    }
+
+    /*언어 드롭다운*/
+    .dropdown-menu{
+        background-color: #E7E7E7 !important;
+    }
+
+    /*모바일ver. 오른쪽 네비 아이콘*/
+    .navbar .nav-icon{
+        display: block;
+        position: absolute;
+        top: 4px;
+        right: 50px;
+    }
+
+    .navbar .nav-icon a img{
+        float: left;
+        position: relative;
+        top: 10px;
+        padding-right: 16px;
+        width: 40px;
+    }
+    
+    .navbar-header #nav-logo img{
+        position: relative;
+        right: 400px;
+        top: 10px;
+        width: 60px;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        z-index: 1;
+    }
+
+
+
+    /*carousel (화면 상단 이미지 슬라이드)----------------------------------------------------------*/
+    #myCarousel .carousel-inner .item img:nth-child(1){ /*PC 안 보이게*/
+        display: none;
+    }
+
+    #myCarousel .carousel-inner .item img:nth-child(2){ /*모바일 보이게*/
+        display: block;
+    }
+
+    .carousel-caption{ /*문구*/
+        position: absolute;
+        left: 15px;
+        margin-bottom: 20px;
+        
+    }
+
+    .carousel-caption h3{ /*자동차 이름*/
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .carousel-caption p{ /*문구*/
+        font-size: 14px;
+    }
+
+
+
+    /*bestkia (toggle tab)--------------------------------------------------------------*/
+    #bestkia{
+        position: relative;
+        top: 250px;
+    }
+    #bestkia h3{/*제목 Best Kia*/
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: -150px;
+        margin-bottom: 40px;
+    }
+
+    #bestkia .nav-tabs{/*최근출시, 연비 효율 등 탭*/
+        margin-bottom: 50px;
+        align-items: normal;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #bestkia .nav-tabs a{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    #bestkia .box{/*자동차 박스*/
+        padding: 30px;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+
+    #bestkia .box .box2{ /*자동차 내용 전체*/
+        height: 180px;
+    }
+
+
+    #bestkia .box .btn{ /*자세히 보기, 견적 내기 버튼*/
+        font-size: 13px;
+    }
+
+
+    .sort {/*각 탭 당 하단 안내 문구*/
+        font-size: 11px;
+        text-align :left;
+        padding-bottom: 50px;
+        color: #697278;
+    }
+
+
+    /* ETC(견적내기, 시승 신청 등) -------------------------------------------------*/
+    #etc{
+        margin-top: 80px;
+    }
+    
+    #etc .box{/*각 항목 박스*/
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    #etc .box img{ /*아이콘 및 >*/
+        width:25px;
+    }
+
+    #etc .box h3{ /*각 항목 이름*/
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+
+    /*News ------------------------------------------------------------------------*/
+    #news h3{
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #news .col-sm-6 img:nth-child(1){
+        display: none;
+    }
+    #news .col-sm-6 img:nth-child(2){
+        display: block;
+    }
+
+    #news .col-sm-6:nth-child(1){
+        height: auto;
+        width: 100%;
+    }
+
+    #news .col-sm-6:nth-child(2){ /*왼쪽 텍스트 박스*/
+        height: 200px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #news .col-sm-6 h5{ /*제목*/
+        font-size: 13px;
+    }
+
+    #news .col-sm-6 h4{ /*소제목*/
+        font-size: 14px;
+        line-height: 2.5;
+        padding-bottom: 30px;
+    }
+    
+    #news .col-sm-6:nth-child(2) p{
+        display: none;
+    }
+    
+    #news .col-sm-4{
+        padding-top: 30px;
+        padding-bottom: 30px;;
+    }
+    
+    #news .col-sm-4 h4{ /*하단 뉴스 제목*/
+        font-size: 14px;
+    }
+
+    #news .col-sm-4 p{ /*하단 뉴스 내용*/
+        font-size: 14px;
+    }
+
+
+    
+
+
+    /*footer -----------------------------------------------------------------*/
+    #footer1{
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    /*로고*/
+    #footer1 .row .col-sm-12{
+        width: 120px;
+        margin-top: 20px;
+    }
+    
+    #footer1 .row2 .col-sm-3{
+        height:110px;
+    }
+    
+    /*판매 네트워크, 견적 내기 등*/
+    #footer1 .row2 .col-sm-3:nth-child(1) ul li{
+        font-size: 13px;
+        font-weight: normal;
+    }
+    
+    /*New Kia, 공지사항 등*/
+    #footer1 .row2 .col-sm-3:nth-child(2) ul li{
+        display: none;
+    }
+    
+    /*sns*/
+    #footer1 .row2 .col-sm-6{ 
+        display: none;
+    }
+    
+
+    /*국가, 드롭업*/
+    #footer1 .row3 .col-sm-4{
+        display: none;
+    }
+    
+
+    
+    
+    /*footer2 =======================================================================================*/
+    #footer2{
+        background: #05141F;
+        overflow: hidden;
+    }
+
+    /*SNS, Family Site collapse*/
+    #footer2 #collapse{
+        display: block;
+    }
+
+    #footer2 #collapse .collapsible {
+        background-color: #05141F;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 160%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-bottom: solid #313131 0.1px;
+        position: relative;
+        left: -80px;
+        top: -15px;
+    }
+
+    #footer2 #collapse .collapsible:nth-child(1) {
+        border-top: solid #313131 0.1px;
+        margin-top: 15px;
+    }
+    
+    #footer2 #collapse .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    #footer2 #collapse .active:after {
+        content: "\2212";
+    }
+    
+    #footer2 #collapse .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+        border-radius: 7px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+    
+    /*개인정보 처리방침 등, 저작권*/
+    #footer2 .row{
+        font-size: 10px;
+        position: relative;
+        right: 320px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    
+    /*개인정보 처리방침 등*/
+    #footer2 .col-sm-8{
+        width: 320px;
+        font-size: 12px;
+        position: relative;
+        left: 40px;
+    }
+    
+    #footer2 .col-sm-8 li{
+        padding: 10px;
+        position: relative;
+        left: 300px;
+    }
+    
+    /*저작권*/
+    #footer2 .col-sm-4{
+        position: relative;
+        left: 370px;
+        top: 20px;
+        width: 150%;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    
+    /*어워즈*/
+    #footer2 .row2{
+        display: none;
+    }
+    
+
+
+}
+
+
